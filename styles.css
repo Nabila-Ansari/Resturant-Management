@@ -1,0 +1,21 @@
+/* Style for the "Add to Cart" button */
+.add-to-cart {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove button border */
+    padding: 8px 16px; /* Add padding */
+    cursor: pointer; /* Add pointer cursor */
+    font-size: 14px; /* Button text size */
+    border-radius: 4px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+
+    /* Center the text both horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the "Add to Cart" button on hover */
+.add-to-cart:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}

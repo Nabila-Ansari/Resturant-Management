@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* box-sizing: border-box; */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: rgb(13, 14, 13); */
+  background-position: center;
+  background-image: linear-gradient(to right bottom, hsl(24, 4%, 23%), hsl(12, 4%, 26%), rgba(41, 40, 38, 0.5));
+  /* background-image: url("https://images.pexels.com/photos/798116/pexels-photo-798116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  /* background-image: linear-gradient( to right bottom ,rgb(255,81,0),rgb(48, 44, 42),rgb(255,0,0,.5)); */
+}
+
+.Sign-Box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgb(255, 255, 255, .5);
+  background:gray ;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Sign-Box h1 {
+  font-size: 2rem;
+  color: #f0ede7;
+  text-align: center;
+
+}
+
+.input-box {
+  width: 310px;
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid rgb(253, 247, 247);
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s all ease;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  /* border: 2px solid rgba(12, 1, 1, 0.5); */
+  /* border-radius: 40px; */
+  padding: 0 35px 0 5px;
+
+}
+
+/* Style the form icons  */
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  /* padding: 10px; */
+  font-size: 1.2rem;
+  line-height: 57px;
+  /* background:url("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin: 13px 0 13px; */
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+  /* background-color:#030002;
+    border:  1px solid white;
+    box-shadow:  0 0 2rem rgb(240,107,55,.8);
+    color: brown; 
+    text-decoration: none;
+    color: rgb(158, 123, 9);
+    padding: 2rem 3.5rem;
+    border: 3px solid rgb(69, 128, 3);
+    border-radius: 150px;
+    box-shadow: 0 0 1rem  rgba(209, 195, 4, 0.582);
+    text-shadow: 0.3rem 1rem rgba(8, 8, 8, 0.5) ; 
+    /* background-color: black; */
+  /* transition: all .4s ease; */
+  /* outline: auto solid black; */
+  /* text-shadow: 3rem; */
+
+}
+
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background: #1d030f;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  /* box-shadow: 0 0 10px rgb(8, 4, 2); */
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(250, 246, 246);
+  font-weight: 600;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: rgb(158, 123, 9);
+  padding: 2rem 3.5rem;
+  border: 1px solid orangered;
+  border-radius: 150px;
+  box-shadow: 0 0 1rem rgba(238, 89, 3, 0.5);
+  /* text-shadow: 0.3rem 1rem rgb(255,255,255,.5) ; */
+  background-color: black;
+  transition: all .4s ease;
+
+}
+
+
+
+
+
+
+
+@media (max-width:360px) {
+  .Sign-Box {
+    width: 100%;
+    height: 100vh;
+  }
+
+}
