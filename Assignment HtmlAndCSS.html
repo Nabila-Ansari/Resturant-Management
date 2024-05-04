@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            align-items: center;
+            height: 100vh;
+        }
+        .SendMessage {
+            background-color: rgb(10, 66, 66);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .SendMessage h1{
+            margin-bottom: 20px;
+            text-align: center;
+            color: hwb(34 84% 2%);
+
+        }
+        .SendMessage label{
+            color: aliceblue;
+        }
+        .SendMessage placeholder{
+            color: aquamarine;
+
+        }
+        .SendMessage button[type="submit"]{
+            width: 20%;
+            background-color: #5a8a87;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+         .SendMessage input[type="text"],
+        .SendMessage input[type="email"],
+        .SendMessage input[type="tel"],
+        .SendMessage input[type="text"],
+        .SendMessage textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    </body>
+    <div class="SendMessage">
+      <H1> Send Message</H1>
+      <form action="#">
+        <label for="username">USERNAME:</label>
+        <input type="text"  name="Username"   placeholder=" Name" required>
+        <label for="tel">PHONE NUMBER:</label>
+        <input type="tel" name="Phone Number" placeholder="Your Phone Number" required>
+        <label for="email">EMAIL:</label>
+        <input type="email" name="Email" placeholder="Enter Your Email"  required>
+        <label for="subject">SUBJECT:</label>
+      <input type="text" name="subject" placeholder="What You want To Discuss With Us?" required>
+      <label for="message">MESSAGE:</label>
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+      <button type="submit" name="Submit " value="Send Message"> Send Message <i class="fa fa-send-o"></i></button>
+
+      </form>
+    </div>
+
+    
+</body>
+</html>
